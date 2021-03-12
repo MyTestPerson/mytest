@@ -10,7 +10,6 @@
 
 <br><br>
 
-
 <form name="user" method="post" action="/login">
 
     <label for="email" >Username</label>
@@ -20,10 +19,6 @@
 
     <label for="password">Password</label>
     <input type="password" id="password" name="password" value="1111" autofocus>
-
-    <#if Session.SPRING_SECURITY_LAST_EXCEPTION?? && Session.SPRING_SECURITY_LAST_EXCEPTION.message?has_content>
-        <@spring.message "login.bad.credentials"/>
-    </#if>
 
     <br>
 
