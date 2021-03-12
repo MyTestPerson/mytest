@@ -6,6 +6,8 @@
 
 *.class
 
+mytest.iml
+
 *.war
 *.jar
 *.ear

@@ -41,5 +41,4 @@ public class Config implements WebMvcConfigurer{
         return viewResolver;
     }
 
-
 }
