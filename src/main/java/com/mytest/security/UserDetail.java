@@ -31,8 +31,14 @@ public class UserDetail implements UserDetailsService {
         }
 
 
-        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(),
-                user.getEnabled(), user.getAccount_non_expired(), user.getCredentials_non_expired(), user.getAccount_non_locked(), getAuthorities());
+        return new org.springframework.security.core.userdetails.User(
+                user.getEmail(),
+                user.getPassword(),
+                user.getEnabled(),
+                user.getAccount_non_expired(),
+                user.getCredentials_non_expired(),
+                user.getAccount_non_locked(),
+                getAuthorities());
 
     }
 

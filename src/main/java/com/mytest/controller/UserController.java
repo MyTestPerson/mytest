@@ -8,7 +8,7 @@ public class UserController {
 
     @GetMapping(value = "/user")
     public String user () {
-        return "user";
+        return "/user";
     }
 
 }
