@@ -2,7 +2,6 @@ package com.mytest.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity(name = "User")
 public class User implements Serializable {
@@ -29,7 +28,6 @@ public class User implements Serializable {
 
     @Column(name = "account_non_locked", nullable = false, length = 1)
     private Boolean account_non_locked;
-
 
     public Long getId() {
         return id;
